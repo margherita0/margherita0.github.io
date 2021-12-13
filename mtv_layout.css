@@ -197,3 +197,29 @@ h5 {
   line-height: 1.5;
   text-transform:uppercase;
 }
+.container {
+  position: relative;
+  text-align: left;
+  font-family: "Metropolis", sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  color: white;
+}
+.annuncio {
+  position: relative;
+}
+.annuncio:hover {
+  width: 520px;
+  cursor: grab;
+}
+.testoannuncio {
+  float: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px;
+  border-radius: none;
+  background: #222; /* browser che non supportano rgba */
+  background: rgba(0,0,0,0.7);
+  width: 83.3%;
+}
