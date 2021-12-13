@@ -1,0 +1,199 @@
+.fixed {
+  position: sticky;
+  width: 500px;
+  height: 100px;
+  top: 0%;
+  left: 50%;
+  z-index: 1;
+}
+body {
+  background-color: #2F2F2F
+}
+h1 {
+  color: grey;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.buttonmenu {
+  background-color: black;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: grey;
+  border: none;
+}
+.buttonmenu:hover {
+  color: #FFFF00;
+}
+li {
+  display: inline;
+}
+.button {
+  background-color: #FFFF00;
+  border-radius: 4px;
+  color: black;
+  padding: 4px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Metropolis", sans-serif;
+  color: black;
+  display: inline-block;
+  font-size: 13px;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid #FFFF00;
+}
+.menutitolo {
+  background-color: #FFFF00;
+  border-radius: 8px;
+  padding: 10px 35px;
+  font-size: 15px;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  color:black
+  border: none;
+  cursor: pointer;
+}
+.menutitolo2 {
+  background-color: #FFFF00;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  color:black
+  border: none;
+  cursor; pointer;
+}
+.menu {
+  position: relative;
+  display: inline-block;
+}
+.menucontenuti {
+  display: none;
+  position: absolute;
+  background-color: rgb(252,255,99);
+  background-color: rgba(252,255,99,0.86);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  font-family: "Metropolis", sans-serif;
+}
+.menucontenuti a {
+  color: black;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: block;
+}
+.menucontenuti a:hover {
+  background-color: #f1f1f1
+  font-family: "Metropolis", sans-serif;
+  font-weight:bold;
+  color: black;
+}
+.menu:hover .menucontenuti {
+  display: block;
+}
+h2 {
+  color: #FFFF00;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+p {
+  color: white;
+  font-family: "Metropolis light", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+}
+.testoimg {
+      font-family: "Metropolis", sans-serif;
+      font-size: 25px;
+      color: white;
+      float: left;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+}
+.testoimg img {
+      margin: 0;
+      padding: 0;
+      border: none;
+}
+.testoimg span {
+      float: center;
+      margin: 0;
+      padding: 20px;
+      width: 100%;
+      background: #222; /* browser che non supportano rgba */
+      background: rgba(0,0,0,0.7);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+}
+h3 {
+  color: #C1C1C1;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+a {
+  color: #FC3370
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  text-decoration: underline;
+}
+.testobold {
+  color: white;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+#boldnero {
+  color: black;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+h4 {
+  font-family: "Metropolis light", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+h5 {
+  font-family: "Metropolis", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+#nero {
+  font-family: "Metropolis", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+#maiuscolo {
+  font-family: "Metropolis", sans-serif;
+  font-size: 15px;
+  color: #FFFF00;
+  line-height: 1.5;
+  text-transform:uppercase;
+}
