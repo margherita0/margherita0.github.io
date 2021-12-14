@@ -193,9 +193,35 @@ h5 {
 #maiuscolo {
   font-family: "Metropolis", sans-serif;
   font-size: 15px;
-  color: #FFFF00;
+  font-weight: 500;
+  text-align: left;
+  color: black;
   line-height: 1.5;
-  text-transform:uppercase;
+  text-transform: none;
+}
+section {
+  max-width: 300px;
+  margin: 300px 250px;
+  position: absolute;
+}
+details {
+  background: #FFFF00;
+  color: black;
+  padding: 15px;
+  margin-bottom: 1px;
+  border-radius: 10px;
+}
+summary {
+  cursor: pointer;
+  font-family: "Metropolis", sans-serif;
+  font-weight: 900;
+  font-size: 18;
+}
+.sfondo {
+  background-image: url("sfondo.png");
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   position: relative;
