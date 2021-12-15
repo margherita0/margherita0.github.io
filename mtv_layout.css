@@ -11,17 +11,18 @@ body {
 }
 h1 {
   color: grey;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 .buttonmenu {
   background-color: black;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: grey;
   border: none;
+  cursor: pointer;
 }
 .buttonmenu:hover {
   color: #FFFF00;
@@ -36,7 +37,7 @@ li {
   padding: 4px 12px;
   text-align: center;
   text-decoration: none;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   color: black;
   display: inline-block;
   font-size: 13px;
@@ -53,7 +54,7 @@ li {
   border-radius: 8px;
   padding: 10px 35px;
   font-size: 15px;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   color:black
   border: none;
@@ -64,7 +65,7 @@ li {
   border-radius: 8px;
   padding: 10px 20px;
   font-size: 15px;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   color:black
   border: none;
@@ -83,7 +84,7 @@ li {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 8px;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
 }
 .menucontenuti a {
   color: black;
@@ -94,7 +95,7 @@ li {
 }
 .menucontenuti a:hover {
   background-color: #f1f1f1
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight:bold;
   color: black;
 }
@@ -103,18 +104,18 @@ li {
 }
 h2 {
   color: #FFFF00;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 p {
   color: white;
-  font-family: "Metropolis light", sans-serif;
+  font-family: "Metropolis", "Helvetica",sans-serif;
   font-size: 12px;
   line-height: 1.2;
 }
 .testoimg {
-      font-family: "Metropolis", sans-serif;
+      font-family: "Metropolis", "Helvetica", sans-serif;
       font-size: 25px;
       color: white;
       float: left;
@@ -141,9 +142,9 @@ p {
 }
 h3 {
   color: #C1C1C1;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
 }
 a {
   color: #FC3370
@@ -165,33 +166,33 @@ a:active {
 }
 .testobold {
   color: white;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 15px;
 }
 #boldnero {
   color: black;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 15px;
 }
 h4 {
-  font-family: "Metropolis light", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 h5 {
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
 #nero {
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
 #maiuscolo {
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-size: 15px;
   font-weight: 500;
   text-align: left;
@@ -200,7 +201,7 @@ h5 {
   text-transform: none;
 }
 section {
-  max-width: 300px;
+  width: 280px;
   margin: 300px 250px;
   position: absolute;
 }
@@ -209,11 +210,11 @@ details {
   color: black;
   padding: 15px;
   margin-bottom: 1px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 summary {
   cursor: pointer;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: 900;
   font-size: 18;
 }
@@ -225,27 +226,34 @@ summary {
 }
 .container {
   position: relative;
-  text-align: left;
-  font-family: "Metropolis", sans-serif;
+  text-align: center;
+  font-family: "Metropolis", "Helvetica", sans-serif;
   font-size: 30px;
   line-height: 1.5;
   color: white;
 }
 .annuncio {
   position: relative;
+  margin: auto;
+  padding: 20px
 }
 .annuncio:hover {
-  width: 520px;
+  width: 465px;
   cursor: grab;
 }
 .testoannuncio {
   float: center;
   position: absolute;
+  text-align: left;
   bottom: 0px;
   left: 0px;
-  padding: 20px;
+  padding: 35px 80px;
   border-radius: none;
-  background: #222; /* browser che non supportano rgba */
-  background: rgba(0,0,0,0.7);
-  width: 83.3%;
+  background: none; /* browser che non supportano rgba */
+  background: none;
+  width: 410px;
+  cursor: grab;
+}
+.testoannuncio:hover {
+  width: 420px;
 }
