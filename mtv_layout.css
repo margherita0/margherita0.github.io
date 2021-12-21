@@ -1,34 +1,114 @@
 .fixed {
   position: sticky;
   width: 500px;
-  height: 100px;
+  height: 80px;
   top: 0%;
   left: 50%;
   z-index: 1;
 }
+.immaginefissa {
+  float: left;
+  margin: 10px;
+}
 body {
-  background-color: #2F2F2F
+  background-color: #121212;
 }
-h1 {
+.dropmenu {
   color: grey;
   font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
-.buttonmenu {
-  background-color: black;
-  font-family: "Metropolis", "Helvetica", sans-serif;
+body{
+	font-size:100%;
+	color:#333;
+	font-family:sans-serif;
+}
+/*container*/
+#drop-menu {
+	margin: 0 0;
+	padding: 0;
+	width: 700px;
+}
+/*menu*/
+ul#menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float:left;
+	width: 700px;
+	background-color: black;
+  font-family: "Metropolis", sans serif;
   font-weight: bold;
-  font-size: 20px;
-  color: grey;
-  border: none;
-  cursor: pointer;
+  font-size: 15px;
 }
-.buttonmenu:hover {
-  color: #FFFF00;
+ul#menu li {
+	margin:0;
+	padding:0;
+	float:left;
+	display: block;
+	border-right: 1.5px solid white;
+	position: relative;
 }
-li {
-  display: inline;
+ul#menu li a {
+	float: left;
+	padding:12px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration:none;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+ul#menu li a:hover {
+	background: #444;
+	color:#fff
+}
+ul#menu ul {
+	margin:2px 0 0;
+	padding:0;
+	display:inline-block;
+	list-style: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	z-index:9999;
+	background: #444;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+ul#menu li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+}
+ul#menu ul li {
+	float: none;
+	display: block;
+	border: 0;
+}
+ul#menu ul a {
+	padding:10px;
+	width: 130px;
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+}
+ul#menu ul a:hover {
+	background-color: #FFFF00;
+	color: black;
+}
+ul#menu ul ul {
+	top: 0;
+	left: 150px;
+	margin: 0;
 }
 .button {
   background-color: #FFFF00;
@@ -52,7 +132,7 @@ li {
 .menutitolo {
   background-color: #FFFF00;
   border-radius: 8px;
-  padding: 10px 35px;
+  padding: 5px 20px;
   font-size: 15px;
   font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
@@ -60,11 +140,16 @@ li {
   border: none;
   cursor: pointer;
 }
+.menutitolo:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid #FFFF00;
+}
 .menutitolo2 {
   background-color: #FFFF00;
   border-radius: 8px;
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   color:black
@@ -78,9 +163,9 @@ li {
 .menucontenuti {
   display: none;
   position: absolute;
-  background-color: rgb(252,255,99);
-  background-color: rgba(252,255,99,0.86);
-  min-width: 160px;
+  background-color: rgb(255,0,0);
+  background-color: rgba(255,255,255,0.90);
+  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 8px;
@@ -111,12 +196,13 @@ h2 {
 p {
   color: white;
   font-family: "Metropolis", "Helvetica",sans-serif;
-  font-size: 12px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .testoimg {
       font-family: "Metropolis", "Helvetica", sans-serif;
-      font-size: 25px;
+      font-size: 27px;
+      line-height: 1.5;
       color: white;
       float: left;
       margin: 0;
@@ -132,7 +218,7 @@ p {
 .testoimg span {
       float: center;
       margin: 0;
-      padding: 20px;
+      padding: 50px 30px;
       width: 100%;
       background: #222; /* browser che non supportano rgba */
       background: rgba(0,0,0,0.7);
