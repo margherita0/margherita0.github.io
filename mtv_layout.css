@@ -1,13 +1,13 @@
 .fixed {
   position: sticky;
-  width: 500px;
+  width: 300px;
   height: 80px;
   top: 0%;
   left: 50%;
   z-index: 1;
 }
 .immaginefissa {
-  float: left;
+  float: none;
   margin: 10px;
 }
 body {
@@ -19,14 +19,14 @@ body {
   font-weight: bold;
   font-size: 15px;
 }
-body{
-	font-size:100%;
-	color:#333;
-	font-family:sans-serif;
+.ricerca {
+  float: right;
+  margin: auto;
+  padding: 7px 60px;
 }
 /*container*/
 #drop-menu {
-	margin: 0 0;
+	margin: 0px 40px;
 	padding: 0;
 	width: 700px;
 }
@@ -37,17 +37,16 @@ ul#menu {
 	list-style: none;
 	float:left;
 	width: 700px;
-	background-color: black;
   font-family: "Metropolis", sans serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
 }
 ul#menu li {
 	margin:0;
 	padding:0;
 	float:left;
 	display: block;
-	border-right: 1.5px solid white;
+	border-right: none;
 	position: relative;
 }
 ul#menu li a {
@@ -63,7 +62,8 @@ ul#menu li a {
 	transition: all 0.6s ease;
 }
 ul#menu li a:hover {
-	background: #444;
+  background-color: rgb(68,68,68);
+  background-color: rgba(68,68,68,0.75);
 	color:#fff
 }
 ul#menu ul {
@@ -77,7 +77,9 @@ ul#menu ul {
 	top: 38px;
 	left: 0;
 	z-index:9999;
-	background: #444;
+  background-color: rgb(68,68,68);
+  background-color: rgba(68,68,68,0.75);
+  border-radius: none;
 	-webkit-transition: all 0.6s ease;
 	-moz-transition: all 0.6s ease;
 	-ms-transition: all 0.6s ease;
@@ -110,44 +112,27 @@ ul#menu ul ul {
 	left: 150px;
 	margin: 0;
 }
-.button {
-  background-color: #FFFF00;
-  border-radius: 4px;
-  color: black;
-  padding: 4px 12px;
-  text-align: center;
-  text-decoration: none;
-  font-family: "Metropolis", "Helvetica", sans-serif;
-  color: black;
-  display: inline-block;
-  font-size: 13px;
-  margin: 10px 2px;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: black;
-  color: white;
-  border: 2px solid #FFFF00;
-}
 .menutitolo {
-  background-color: #FFFF00;
-  border-radius: 8px;
-  padding: 5px 20px;
-  font-size: 15px;
+  background-color: rgb(74,74,74);
+  background-color: rgba(74,74,74,0.88);
+  border-radius: 10px;
+  padding: 14px 26px;
+  font-size: 14px;
   font-family: "Metropolis", "Helvetica", sans-serif;
-  font-weight: bold;
-  color:black
+  font-weight: semibold;
+  color: white;
   border: none;
   cursor: pointer;
 }
 .menutitolo:hover {
   background-color: black;
+  border-radius: 10px;
   color: white;
-  border: 2px solid #FFFF00;
+  border: 1.5px solid #FFFF00;
 }
 .menutitolo2 {
   background-color: #FFFF00;
-  border-radius: 8px;
+  border-radius: none;
   padding: 10px 20px;
   font-size: 13px;
   font-family: "Metropolis", "Helvetica", sans-serif;
@@ -168,8 +153,10 @@ ul#menu ul ul {
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 8px;
+  border-radius: 10px;
   font-family: "Metropolis", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-align: left;
 }
 .menucontenuti a {
   color: black;
@@ -200,31 +187,56 @@ p {
   line-height: 1.5;
 }
 .testoimg {
-      font-family: "Metropolis", "Helvetica", sans-serif;
-      font-size: 27px;
-      line-height: 1.5;
-      color: white;
-      float: left;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      overflow: hidden;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-size: 27px;
+  line-height: 1.5;
+  color: white;
+  float: right;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 .testoimg img {
-      margin: 0;
-      padding: 0;
-      border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.titologiallo {
+  float: center;
+  margin: auto;
+  width: 100%;
+  background: none;
+  position: relative;
+  left: 0;
+  top: 110px;
+  color: #FFFF00;
+  font-size: 45px;
 }
 .testoimg span {
-      float: center;
-      margin: 0;
-      padding: 50px 30px;
-      width: 100%;
-      background: #222; /* browser che non supportano rgba */
-      background: rgba(0,0,0,0.7);
-      position: absolute;
-      left: 0;
-      bottom: 0;
+  float: center;
+  margin: 0;
+  padding: 170px 100px;
+  width: 100%;
+  background: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#pulsante {
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+font: "Metropolis", Helvetica, sans-serif;
+font-size: 11px;
+color: #fff;
+padding: 10px 20px;
+border: solid 1px white;
+background: none;
+}
+#pulsante:hover {
+  color: #FFFF00;
+  border: solid 1px #FFFF00;
 }
 h3 {
   color: #C1C1C1;
