@@ -6,7 +6,6 @@ body {
   height: 80px;
 }
 .fixed {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 5px;
@@ -179,16 +178,26 @@ h1 {
   font-size: 30px;
   position: relative;
   margin: auto;
-  top: 30px;
+  top: 40px;
   text-align: center;
   padding: 100px 0px;
+}
+#container {
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-ms-flex;
+  display:flex;
+  -webkit-flex-direction:row;
+  flex-direction:row;
+  -webkit-justify-content:center;
+  justify-content:center;
 }
 .programmi {
   width: 230px;
   display: inline;
-  margin-left: 15px;
-  margin-right: auto;
-  padding: 0 40px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 20px;
   -webkit-transition: all 0.5s ease; /* Safari and Chrome */
   -moz-transition: all 0.5s ease; /* Firefox */
   -ms-transition: all 0.5s ease; /* IE 9 */
@@ -202,4 +211,53 @@ h1 {
   -o-transform:scale(98%); /* Opera */
   transform:scale(98%);
   cursor: grab;
+}
+.featured {
+  width: 450px;
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  -moz-transition: all 0.5s ease; /* Firefox */
+  -ms-transition: all 0.5s ease; /* IE 9 */
+  -o-transition: all 0.5s ease; /* Opera */
+  transition: all 0.5s ease;
+  display: block;
+  margin: 0 40px;
+  padding: 0px;
+}
+.featured:hover {
+  -webkit-transform:scale(98%); /* Safari and Chrome */
+  -moz-transform:scale(98%); /* Firefox */
+  -ms-transform:scale(98%); /* IE 9 */
+  -o-transform:scale(98%); /* Opera */
+  transform:scale(98%);
+  cursor: grab;
+}
+.episodes {
+  width: 380px;
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  -moz-transition: all 0.5s ease; /* Firefox */
+  -ms-transition: all 0.5s ease; /* IE 9 */
+  -o-transition: all 0.5s ease; /* Opera */
+  transition: all 0.5s ease;
+  display: block;
+  margin:0 auto;
+  padding: 0 30px;
+}
+.episodes:hover {
+  -webkit-transform:scale(102%); /* Safari and Chrome */
+  -moz-transform:scale(102%); /* Firefox */
+  -ms-transform:scale(102%); /* IE 9 */
+  -o-transform:scale(102%); /* Opera */
+  transform:scale(102%);
+  cursor: grab;
+}
+h2 {
+  color: #9C9C9C;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  text-align: center;
+  padding: 100px 0px;
 }
