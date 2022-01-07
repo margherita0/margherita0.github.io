@@ -6,12 +6,11 @@ body {
   height: 80px;
 }
 .fixed {
+  position: -webkit-sticky;
   position: sticky;
-  width: 500px;
-  height: 80px;
-  top: 0%;
-  left: 50%;
-  z-index: 1;
+  top: 0;
+  padding: 5px;
+  background-color: #black;
 }
 .immaginefissa {
   position: relative;
@@ -159,7 +158,7 @@ input {
   font-size: 25px;
 }
 #pulsante {
- cursor: pointer;
+ cursor: grab;
  text-align: center;
  text-decoration: none;
  font: "Metropolis", Helvetica, sans-serif;
@@ -172,4 +171,35 @@ input {
 #pulsante:hover {
   color: #FFFF00;
   border: solid 1px #FFFF00;
+}
+h1 {
+  color: white;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  margin: auto;
+  top: 30px;
+  text-align: center;
+  padding: 100px 0px;
+}
+.programmi {
+  width: 230px;
+  display: inline;
+  margin-left: 15px;
+  margin-right: auto;
+  padding: 0 40px;
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  -moz-transition: all 0.5s ease; /* Firefox */
+  -ms-transition: all 0.5s ease; /* IE 9 */
+  -o-transition: all 0.5s ease; /* Opera */
+  transition: all 0.5s ease;
+}
+.programmi:hover {
+  -webkit-transform:scale(98%); /* Safari and Chrome */
+  -moz-transform:scale(98%); /* Firefox */
+  -ms-transform:scale(98%); /* IE 9 */
+  -o-transform:scale(98%); /* Opera */
+  transform:scale(98%);
+  cursor: grab;
 }
