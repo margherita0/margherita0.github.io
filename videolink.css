@@ -70,3 +70,28 @@ ul#menu li a:hover {
   background-color: none;
 	color:#fff
 }
+video {
+  position: absolute;
+  width: 1000px;
+  float: left;
+  margin: 10px -110px;
+}
+.button {
+  float: right;
+  background-color: #FFFF00;
+  border: none;
+  color: black;
+  padding: 11px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  margin-top: 10px;
+  margin-right: 150px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #00acd0;
+}
