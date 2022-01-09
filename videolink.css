@@ -95,3 +95,47 @@ video {
 .button:hover {
   background-color: #00acd0;
 }
+.titologiallo {
+  position: relative;
+  float: right;
+  color: #FFFF00;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: -105px;
+  display: block;
+  margin-top: 140px;
+}
+.titolobianco {
+  position: relative;
+  float: right;
+  color: white;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  margin-right: -248px;
+  display: block;
+  margin-top: 170px;
+}
+.stagionedata {
+  position: relative;
+  float: right;
+  color: #9C9C9C;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: -170px;
+  display: block;
+  margin-top: 240px;
+}
+p {
+  position: relative;
+  float: right;
+  color: white;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-size: 13px;
+  margin-right: -240px;
+  display: block;
+  margin-top: 280px;
+  line-height: 1.2;
+}
