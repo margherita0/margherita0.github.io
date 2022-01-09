@@ -12,9 +12,9 @@ body {
   background-color: #ff3939;
 }
 .logo {
+  position: sticky;
   width: 70px;
   float: left;
-  position: absolute;
   margin: 5px 30px;
 }
 h1 {
@@ -88,7 +88,7 @@ video {
   font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 11px;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-right: 150px;
   cursor: pointer;
 }
@@ -138,4 +138,47 @@ p {
   display: block;
   margin-top: 280px;
   line-height: 1.2;
+}
+#container {
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-ms-flex;
+  display:flex;
+  -webkit-flex-direction:row;
+  flex-direction:row;
+  -webkit-justify-content:center;
+  justify-content:center;
+}
+.episodes {
+  width: 280px;
+  position: relative;
+  float: left;
+  left: 50px;
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  -moz-transition: all 0.5s ease; /* Firefox */
+  -ms-transition: all 0.5s ease; /* IE 9 */
+  -o-transition: all 0.5s ease; /* Opera */
+  transition: all 0.5s ease;
+  display: inline;
+  margin: 700px auto;
+  padding: 0px 20px ;
+}
+.episodes:hover {
+  -webkit-transform:scale(98%); /* Safari and Chrome */
+  -moz-transform:scale(98%); /* Firefox */
+  -ms-transform:scale(98%); /* IE 9 */
+  -o-transform:scale(98%); /* Opera */
+  transform:scale(98%);
+  cursor: grab;
+}
+.aggiunti {
+  position: relative;
+  float: left;
+  color: #9C9C9C;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: -100px;
+  display: block;
+  margin-top: 650px;
 }
