@@ -3,17 +3,18 @@ body {
 }
 .sfondonero {
   background-color: black;
-  height: 80px;
+  height: 60px;
 }
 .fixed {
   position: sticky;
   top: 0;
-  padding: 5px;
-  background-color: #black;
+  padding: 10px;
+  z-index: 1;
+  background-color: black;
 }
 .immaginefissa {
   position: relative;
-  top: 20px;
+  top: 0;
   left: 50%;
   width: 80px;
   float: none;
@@ -26,6 +27,7 @@ body {
 	margin: 0px 20px;
 	padding: 0;
 	width: 700px;
+  background-color: black;
 }
 /*menu*/
 ul#menu {
@@ -129,7 +131,7 @@ input {
   line-height: 1.5;
   color: white;
   float: left;
-  padding: 20px 0;
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
@@ -148,7 +150,7 @@ input {
 }
 .testoimg span {
   margin: 0;
-  padding: 180px 50px;
+  padding: 220px 50px;
   width: 100%;
   background: none;
   position: absolute;
@@ -156,18 +158,22 @@ input {
   bottom: 0;
   font-size: 25px;
 }
-#pulsante {
- cursor: grab;
- text-align: center;
- text-decoration: none;
- font: "Metropolis", Helvetica, sans-serif;
- font-size: 11px;
- color: #fff;
- padding: 10px 25px;
- border: solid 1px white;
- background: none;
+.pulsante {
+  position: absolute;
+  float: left;
+  left: 50px;
+  margin-top: 450px;
+  text-align: center;
+  text-decoration: none;
+  font: "Metropolis", Helvetica, sans-serif;
+  font-size: 11px;
+  color: #fff;
+  padding: 10px 25px;
+  border: solid 1px white;
+  background: none;
+  cursor: grab;
 }
-#pulsante:hover {
+.pulsante:hover {
   color: #FFFF00;
   border: solid 1px #FFFF00;
 }
