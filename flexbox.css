@@ -19,6 +19,7 @@ body {
   width: 80px;
   float: none;
   margin: 0 auto;
+  background-color: none;
 }
 /*container*/
 #drop-menu {
@@ -257,7 +258,7 @@ h1 {
   cursor: grab;
 }
 h2 {
-  color: #9C9C9C;
+  color: #808080;
   font-family: "Metropolis", "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 10px;
@@ -266,4 +267,16 @@ h2 {
   top: 40px;
   text-align: center;
   padding: 100px 0px;
+}
+h3 {
+  color: #808080;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  margin: auto;
+  top: 100px;
+  text-align: center;
+  padding: none;
+  line-height: 1.8;
 }
