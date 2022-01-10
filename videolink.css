@@ -77,7 +77,7 @@ ul#menu li a:hover {
 }
 video {
   position: absolute;
-  width: 70%;
+  width: 1000px;
   float: left;
   margin: 70px -110px;
 }
