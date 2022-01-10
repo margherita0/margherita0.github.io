@@ -1,6 +1,11 @@
 body {
   background-color: black;
 }
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 .barrafissa {
   position: sticky;
   float: right;
@@ -8,7 +13,7 @@ body {
   height: 40px;
   top: 0;
   padding: 0;
-  z-index: 1;
+  z-index: 0;
   background-color: #ff3939;
 }
 .logo {
@@ -74,7 +79,7 @@ video {
   position: absolute;
   width: 1000px;
   float: left;
-  margin: 10px -110px;
+  margin: 70px -110px;
 }
 .button {
   float: right;
@@ -181,4 +186,15 @@ p {
   margin-left: -100px;
   display: block;
   margin-top: 650px;
+}
+h2 {
+  color: #808080;
+  font-family: "Metropolis", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  position: absolute;
+  margin: auto;
+  top: 1300px;
+  text-align: center;
+  padding: 0 250px;
 }
