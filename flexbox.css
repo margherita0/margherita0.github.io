@@ -21,6 +21,11 @@ body {
   margin: 0 auto;
   background-color: none;
 }
+@media screen and (max-width: 600px) {
+  .immaginefissa {
+    width: 20px;
+  }
+}
 /*container*/
 #drop-menu {
   position: relative;
